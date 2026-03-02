@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle fill="#E0F2FE" cx="400" cy="300" r="250"/>
+        <text font-family="Arial-BoldMT, Arial" font-size="120" font-weight="bold" fill="#3B82F6">
+            <tspan x="320" y="380">404</tspan>
+        </text>
+        <path d="M400,150 C450,150 500,200 500,250 C500,300 450,350 400,350 C350,350 300,300 300,250 C300,200 350,150 400,150 Z" fill="#93C5FD"/>
+        <path d="M400,180 C430,180 450,200 450,230 C450,260 430,280 400,280 C370,280 350,260 350,230 C350,200 370,180 400,180 Z" fill="#FFFFFF"/>
+        <path d="M380,220 L420,220 L420,240 L380,240 Z" fill="#3B82F6"/>
+        <path d="M390,260 L410,260 L410,270 L390,270 Z" fill="#3B82F6"/>
+    </g>
+</svg> 

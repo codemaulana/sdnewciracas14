@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #001f3f;
+  --color-peach-100: #ffdbac;
+  --color-brown-500: #8b4513;
+  --spacing-navcontainermd: 40%;
+  --spacing-navcontainerlg: 35%;
+  --spacing-inputarticlelg: 500px;
+  --spacing-inputarticlemd: 320px;
+  --spacing-card: 400px;
+  --animate-marquee: marquee 15s linear infinite;
+  --animate-walk: walk 2s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    ,
+    100% {
+      transform: translateX(-200%);
+    }
+  }
+
+  @keyframes progress {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}

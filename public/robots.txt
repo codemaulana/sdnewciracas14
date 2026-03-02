@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /login
+Disallow: /dashboard
+
+# Host
+Host: https://sdnciracas14.sch.id
+
+# Sitemaps
+Sitemap: https://sdnciracas14.sch.id/sitemap.xml
