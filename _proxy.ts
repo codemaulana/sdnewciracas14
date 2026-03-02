@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { jwtVerify } from "jose";
 
-const allowedOrigins = ["c1m1jltr-3000.asse.devtunnels.ms", "localhost:3000"];
 
 async function verifyToken(token: string) {
   try {
