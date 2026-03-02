@@ -1,42 +1,42 @@
 import { MetadataRoute } from "next";
+import {prisma }from "@/lib/prisma"; // Pastikan path prisma kamu benar
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const baseUrl = "https://sdnciracas14.sch.id";
+
+  // Ambil data semua artikel dari database sekolah
+  const articles = await prisma.articles.findMany({
+    select: { id: true, updatedAt: true },
+  });
+
+  // Petakan artikel ke format sitemap
+  const articleEntries = articles.map((post) => ({
+    url: `${baseUrl}/artikel/${post.id}`,
+    lastModified: post.updatedAt,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+
+  // Gabungkan dengan halaman statis kamu yang tadi
   return [
     {
-      url: "https://sdnciracas14.sch.id",
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://sdnciracas14.sch.id/artikel",
+      url: `${baseUrl}/artikel`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.8,
     },
     {
-      url: "https://sdnciracas14.sch.id/information",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://sdnciracas14.sch.id/file",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: "https://sdnciracas14.sch.id/profil",
+      url: `${baseUrl}/profil`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
     },
-    {
-      url: "https://sdnciracas14.sch.id/galeri",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
+    ...articleEntries, 
   ];
 }
