@@ -15,13 +15,6 @@ const nextConfig = {
     ],
   },
 
-  experimental: {
-    serverActions: {
-      allowedOrigins: ["c1m1jltr-3000.asse.devtunnels.ms", "localhost:3000"],
-      bodySizeLimit: "10mb",
-    },
-  },
-
   // Additional security headers
   headers: async () => {
     return [
