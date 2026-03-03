@@ -47,3 +47,9 @@ model Visitor {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
 }
+
+model Statistic {
+  id    Int    @id @default(autoincrement())
+  label String @unique
+  count Int    @default(0)
+}
