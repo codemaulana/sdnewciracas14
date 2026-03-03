@@ -5,11 +5,12 @@ import { PiInstagramLogoFill } from "react-icons/pi";
 import { ImYoutube2 } from "react-icons/im";
 import { IoLogoFacebook } from "react-icons/io5";
 import Link from "next/link";
+import VisitorStats from "@/common/layouts/visitor";
 
 export default function Footer() {
   return (
     <footer className="bg-red-900 text-white font-semibold  text-sm">
-      <div className="grid md:grid-cols-2  lg:grid-cols-4 py-20 px-8 md:px-28 gap-y-16 md:gap-4">
+      <div className="grid md:grid-cols-2  lg:grid-cols-5 py-20 px-8 md:px-28 gap-y-16 md:gap-4">
         <div className="flex flex-col gap-3">
           <h1 className="text-xl mb-3">Kontak Kami </h1>
           <a
@@ -102,6 +103,7 @@ export default function Footer() {
             Galeri
           </Link>
         </div>
+        <VisitorStats />
       </div>
       <div className="p-5 pb-28 md:pb-3 bg-primary text-center text-white font-semibold">
         <h1>&copy;2025 SDN CIRACAS 14</h1>

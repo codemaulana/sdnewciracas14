@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/common/components/providers";
 import { Toaster } from "react-hot-toast";
+import VisitorTracker from "@/common/components/record-visit";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -72,6 +73,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.variable} antialiased`}>
+        <VisitorTracker />
         <AuthProvider>{children}</AuthProvider>
         <Toaster />
       </body>

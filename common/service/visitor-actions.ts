@@ -11,7 +11,7 @@ export async function cleanupOldVisitors() {
         },
       },
     });
-    revalidatePath("/dashboard"); // Refresh data di dashboard
+    revalidatePath("/dashboard");
     return { success: true };
   } catch (error) {
     return { success: false };
