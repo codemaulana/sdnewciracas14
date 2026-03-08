@@ -72,7 +72,7 @@ export default function ManageHero() {
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="fixed top-10 left-1/2 -translate-x-1/2 z-[100] w-[90%] max-w-md bg-red-50 border border-red-200 p-4 rounded-2xl shadow-2xl flex items-center gap-3"
+            className="fixed top-10 left-1/2 -translate-x-1/2 z-100 w-[90%] max-w-md bg-red-50 border border-red-200 p-4 rounded-2xl shadow-2xl flex items-center gap-3"
           >
             <div className="bg-red-500 text-white p-2 rounded-xl">
               <FaExclamationTriangle />
@@ -92,7 +92,7 @@ export default function ManageHero() {
       </header>
 
       {/* Upload Box Premium */}
-      <label className={`group relative mb-12 flex flex-col items-center justify-center w-full h-40 border-2 border-dashed rounded-[32px] transition-all cursor-pointer overflow-hidden ${isUploading ? 'bg-slate-50 border-blue-200' : 'bg-white border-slate-300 hover:bg-slate-50 hover:border-blue-500'}`}>
+      <label className={`group relative mb-12 flex flex-col items-center justify-center w-full h-40 border-2 border-dashed rounded-4xl transition-all cursor-pointer overflow-hidden ${isUploading ? 'bg-slate-50 border-blue-200' : 'bg-white border-slate-300 hover:bg-slate-50 hover:border-blue-500'}`}>
         {isUploading ? (
           <div className="flex flex-col items-center gap-3">
             <FaSpinner className="animate-spin text-3xl text-blue-600" />
@@ -120,7 +120,7 @@ export default function ManageHero() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.5 }}
-              className="relative aspect-square md:aspect-video rounded-[24px] md:rounded-[32px] overflow-hidden shadow-xl group border border-slate-100"
+              className="relative aspect-square md:aspect-video rounded-3xl md:rounded-4xl overflow-hidden shadow-xl group border border-slate-100"
             >
               <img src={img.url} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Hero" />
               <div className="absolute inset-0 bg-linear-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center pb-4">

@@ -1,8 +1,8 @@
 import Footer from "../footer/footer";
 import Navbar from "../navbar/navbar";
-import ImageCarouselTeacher from "./components/carousel-teacher";
 import FaqAccordion from "./components/faq";
 import SambutanKepsek from "./components/sambutan-kepsek";
+import TeachersLayout from "./components/teacher-layout";
 import VisiMisi from "./components/visi-misi";
 
 export default function ProfileComponent() {
@@ -11,7 +11,7 @@ export default function ProfileComponent() {
       <Navbar />
       <main>
         <SambutanKepsek />
-        <ImageCarouselTeacher />
+        <TeachersLayout  />
         <VisiMisi />
         <FaqAccordion />
       </main>

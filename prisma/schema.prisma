@@ -59,3 +59,11 @@ model HeroImage {
   url       String
   createdAt DateTime @default(now())
 }
+
+model Teacher {
+  id        Int      @id @default(autoincrement())
+  nama      String   @unique
+  jabatan   String
+  imageUrl  String
+  createdAt DateTime @default(now())
+}
