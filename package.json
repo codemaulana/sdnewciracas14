@@ -12,7 +12,7 @@
   "dependencies": {
     "@floating-ui/dom": "^1.7.5",
     "@prisma/adapter-pg": "^7.3.0",
-    "@prisma/client": "^7.3.0",
+    "@prisma/client": "^7.4.2",
     "@tiptap/core": "^3.18.0",
     "@tiptap/pm": "^3.18.0",
     "@tiptap/react": "^3.18.0",
@@ -48,7 +48,7 @@
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.2",
     "eslint-config-next": "16.1.6",
-    "prisma": "^7.3.0",
+    "prisma": "^7.4.2",
     "tailwindcss": "^4.1.18",
     "tsx": "^4.21.0",
     "typescript": "^5"
