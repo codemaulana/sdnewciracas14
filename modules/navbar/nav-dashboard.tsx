@@ -92,7 +92,7 @@ export default function NavbarDashboard() {
             <div className="flex items-center gap-3 p-3 bg-slate-900 rounded-2xl">
                 <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-xs">M</div>
                 <div className="overflow-hidden">
-                    <p className="text-xs font-bold truncate text-slate-200">Admin SDN Ciracas</p>
+                    <p className="text-xs font-bold truncate text-slate-200">Admin SDN Ciracas 14</p>
                     <p className="text-[9px] text-slate-500 font-medium">Administrator</p>
                 </div>
             </div>
